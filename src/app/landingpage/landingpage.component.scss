@@ -26,116 +26,109 @@
 
     .button1 {
       @include no-border;
-      width: 12rem;
-      height: 4rem;
+      margin: 1rem;
+      padding: 1.5rem;
+      color: rgb(73, 72, 72);
+      width: 15rem;
+      font-size: $font-size-16;
       border-radius: 5rem;
       font-weight: $font-weight-bold;
     }
   }
-}
 
-.Content-2 {
-  
-
-position: absolute;
-bottom: 0;
-top: 36rem;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 60%;
-flex-direction: column;
-  .Order-list {
-    width: 80%;
+  .Content-2 {
+    position: absolute;
+    bottom: 0;
+    top: 40rem;
     @include d-flex(center, center);
-    padding: 0;
-    background-color: black;
-    border-radius: 1rem 1rem 5px 5px;
-    color: $white;
-    margin: 0;
+    width: 60%;
+    flex-direction: column;
 
-    .List-1 {
+    .Order-list {
+      width: 80%;
       @include d-flex(center, center);
+      @include list-no-style;
+      background-color: black;
+      border-radius: 1rem 1rem 5px 5px;
+      color: $white;
 
-    
-      @include spacecontent(2rem 0, 0rem 4rem 0);
-      list-style: none;
-      color: $list;
-      border-right: 1px solid white;
-      outline: none;
-      font-weight: $font-weight-medium;
+      .List-1 {
+        @include d-flex(center, center);
+        @include spacecontent(1.2rem 0, 0rem 4rem 0);
+        @include no-style;
+        color: $list;
+        border-right: 1px solid $white;
+        font-weight: $font-weight-medium;
 
-      a{
-        text-decoration: none;
-        font-size: 1.2rem;
-        color: $white;
+        a {
+          text-decoration: none;
+          font-size: $font-size-12;
+          color: $white;
+        }
+      }
+
+      .list {
+        padding-left: 5rem;
+      }
+      .List-1:nth-child(5) {
+        border: none;
+      }
+      .list2 {
+        padding-right: 5rem;
+        
       }
     }
-
-    .list {
-      padding-left: 5rem;
-    }
-    .List-1:nth-child(5){
-      border: none;
-    }
-    .list2 {
-      padding-right: 5rem;
-    }
-  }
-}
-
-
-
-
-.Search-head{
-width: 100%;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10rem;
-  box-shadow: 1px 1px 15px 1px black;
- 
-  .Search-child{
-    @include d-flex(center, center);
-    padding: 0.7rem;
-   
   }
 
-  .select-container{
-    
-    @include d-flex(center,center);
-    padding:.2em 2em;
-    border-right: 1px solid $gray2;
-  }
-  .List-2{
-    @include d-flex(center, center);
-    border: none;
-    outline: none;
-    list-style: none;
-    font-size: 1.5rem;
-    
-  
-  }
-
-  .input-field{
-    flex: 1;
-    border: none;
-    outline: none;
-    padding-left: 1.5rem;
-  }
-
-  .search-button{
-    border: 3px solid orange;
-  padding: 1.8rem ;
-  width: 15rem;
-   background-color: $white;
+  .Search-head {
+    width: 100%;
+    background-color: $white;
     border-radius: 10rem;
-    font-size: $font-size-17;
-    font-weight: 700;
-   
-    
-  }
+    box-shadow: 0px 0px 8px 0px $black;
 
-  .Icon{
-    margin: 1.5rem;
+    .Search-child {
+      @include d-flex(center, center);
+      padding: 0.6rem;
+
+      .select-container {
+        @include d-flex(center, center);
+        height: 3.5rem;
+        padding: 0.2em 2em;
+        padding-right: 0;
+        border-right: 1px solid grey;
+
+        .Icon {
+          margin: 1.5rem;
+          color: grey;
+        }
+      }
+
+      .List-2 {
+        @include d-flex(center, center);
+        color: grey;
+        @include no-style;
+        padding: 1rem;
+        padding-left: 0;
+        font-size: 1.5rem;
+      }
+
+      .input-field {
+        flex: 1;
+        font-size: 1.5rem;
+        @include no-border;
+        padding-left: 1.5rem;
+      }
+
+      .search-button {
+        color: #E05206;
+        border: 3px solid #E05206;
+        padding: 1.6rem;
+        width: 17rem;
+        background-color: $white;
+        border-radius: 10rem;
+        font-size: $font-size-19;
+        font-weight: $font-weight-bold;
+      }
+    }
   }
 }
-

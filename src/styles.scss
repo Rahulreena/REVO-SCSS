@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import './assets/scss/base/fonts';
 
-
+body{
+    margin: 0;
+}
 
 html{
     font-size: 10px;

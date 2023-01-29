@@ -64,8 +64,13 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  
 }
-
+@mixin no-style{
+  list-style: none;
+  outline: none;
+  border: none;
+}
 @mixin popover-default {
   padding: 0;
   border: none;
