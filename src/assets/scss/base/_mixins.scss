@@ -3,10 +3,13 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
-@mixin d-flex-h-center($justify-content,$align-item) {
+
+
+@mixin d-flex-h-center($justify-content,$align-item,$text-align) {
   display: flex;
   justify-content: $justify-content;
   align-items: $align-item;
+  text-align: $text-align;
 }
 @mixin d-flex-v-center($align-items) {
   display: flex;
@@ -16,6 +19,12 @@
 @mixin flex-v-center {
   display: flex;
   align-items: center;
+}
+
+@mixin center {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 @mixin flex-h-center {
   display: flex;
@@ -136,4 +145,19 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+
+// 
+@mixin directions{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin newdirection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { CardsComponent } from './cards/cards.component';
+import { ProjectCardsComponent } from './project-cards/project-cards.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LandingpageComponent,
-    CardsComponent
+    CardsComponent,
+    ProjectCardsComponent
   ],
   imports: [
     BrowserModule,
