@@ -3,53 +3,51 @@
 @import "../../assets/scss/base/fonts";
 @import "../../assets/scss/base/typography";
 
-.container {
-  width: 95%;
-}
-
-.row {
-  @include flex-fw-wrap;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
 .footer {
   background-color: #001b49;
   height: 100%;
   padding: 70px 0;
   padding-left: 50px;
-}
 
-.footer-col {
-    @include flex-fd-column ;
-  padding: 0 15px;
-}
+  .container {
+    width: 95%;
 
-.footer-col h4 {
-  font-size: 1.7rem;
-  font-weight: 400;
-  color: white;
-  margin: 0;
-  text-transform: capitalize;
-  position: relative;
-}
+    .row {
+      @include flex-fw-wrap;
 
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 10px;
-}
-.footer-col ul li a {
-  font-size: 14px;
-  text-transform: capitalize;
-  color: white;
-  line-height: 3rem;
-  text-decoration: none;
-  font-weight: 300;
-  color: #ffffff8f;
-  display: block;
-  transition: all 0.3s ease;
+      .footer-col {
+        @include flex-fd-column;
+        padding: 0 15px;
+        h4 {
+          font-size: 1.7rem;
+          font-weight: 400;
+          color: white;
+          margin: 0;
+          text-transform: capitalize;
+          position: relative;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+        }
+        ul li:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        ul li a {
+          font-size: 14px;
+          text-transform: capitalize;
+          color: white;
+          line-height: 3rem;
+          text-decoration: none;
+          font-weight: 300;
+          color: #ffffff8f;
+          display: block;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
 }
 
 /* responsive */

@@ -1,25 +1,40 @@
 @import "../../assets/scss/base/colors";
 @import "../../assets/scss/base/fonts";
 @import "../../assets/scss/base/mixins";
+@import "../../assets/scss/base/typography";
 
 .card-container {
-  width: 100%;
-  height: auto;
+  @include width-height(100%, auto);
   @include d-flex(center, center);
+  flex-wrap: wrap;
+  padding-top: 3rem;
 
   .card-box {
-    width: 12rem;
-    height: 12rem;
+    position: relative;
+    @include width-height(12rem, 12rem);
     background: rgb(255, 255, 255);
     color: white;
-    font-size: 2rem;
+    font-size: $font-size-20;
     @include center;
     line-height: 12rem;
     border-radius: 1rem;
     margin: 2rem;
     margin-top: 5rem;
     box-shadow: 0px 3px 20px 0 rgb(0, 0, 0, 0.159);
+    
+.ball{
+  @include position-right-bottom(3rem, 6.7rem);
+  @include width-height(2.8rem, 2.8rem);
+  background-color: #5d47dc3d;
+  border-radius: 50%;
+}
 
+.ball-2{
+  background-color: #5d47dc6e;
+  @include width-height(1.5rem, 1.5rem);
+  @include position-top-right(6.3rem, 7rem);
+  border-radius: 50%;
+}
     p {
       color: #000000;
       font-size: 1.6rem;
@@ -88,9 +103,9 @@
 }
 .galery {
   @include flex-h-center;
+  padding-bottom: 5rem;
   .content {
-    width: 42rem;
-    height: 48rem;
+    @include width-height(42rem, 48rem);
     @include flex-fd-column;
     @include d-flex-h-center(center, center, center);
     border-radius: 2rem;
@@ -105,23 +120,20 @@
     }
 
     .cardp {
-      padding: 2rem;
-      font-size: 1.8rem;
-      margin: 0;
+      @include margin-padding(0, 2rem);
+      font-size: $font-size-18;
       margin-bottom: 1.5rem;
       color: grey;
       line-height: 4rem;
-      padding-top: 0;
-      padding-bottom: 0;
+      @include paddingtop-bottom(0, 0);
     }
 
     .card-button {
-      margin: 1rem;
-      padding: 1.8rem;
-      font-size: 1.7rem;
+      @include margin-padding(1rem, 1.8rem);
+      font-size: $font-size-17;
       width: 13rem;
-      border: 1px solid orange;
-      color: orange;
+      border: 1px solid #E05206;
+      color: #E05206;
       border-radius: 29px;
       background-color: white;
       font-weight: 600;

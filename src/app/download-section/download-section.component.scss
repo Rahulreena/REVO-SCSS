@@ -5,8 +5,7 @@
 
 .download-main {
   background-image: url(../../assets/dnlod.png);
-  width: 100%;
-  height: 50vh;
+  @include width-height(100%, 50vh);
   background-size: cover;
   @include d-flex(center, flex-end);
   padding-bottom: 1rem;
@@ -21,54 +20,52 @@
       margin: 0;
     }
     .revo {
-      color: white;
-    }
-    .download-p {
-      color: white;
-      font-size: 1.5rem;
+      color: $white;
     }
 
     .last-section {
       @include mod-newdirections;
-    }
 
-    .btns {
-      display: flex;
-      gap: 3rem;
+      .download-p {
+        color: $white;
+        font-size: 1.5rem;
+      }
+      .btns {
+        display: flex;
+        gap: 3rem;
 
-      .btn1 {
-        padding-left: 1rem;
-        gap: 1rem;
-        line-height: 2rem;
-        width: 18rem;
-        background-color: black;
-        border-radius: 10px;
-        color: white;
-        @include d-flex(start, center);
-        text-decoration: none;
-
-        .btn-content {
-          @include directions;
-          line-height: 1.5rem;
-
-          .btn-p {
-            font-size: 0.8rem;
-            margin-top: 0.2rem;
-            margin-bottom: 0;
-            color: gray;
-            padding: 0.2rem;
-          }
-
-          .btn-span {
-            font-size: 1.4rem;
-            padding: 0.2rem;
-            margin-bottom: 0.8rem;
-          }
-        }
-
-        .logo-icon {
+        .btn1 {
+          padding-left: 1rem;
+          gap: 1rem;
+          line-height: 2rem;
+          width: 18rem;
+          background-color: black;
+          border-radius: 10px;
           color: white;
-          font-size: 3.5rem;
+          @include d-flex(start, center);
+          text-decoration: none;
+          
+          .logo-icon {
+            color: white;
+            font-size: 3.5rem;
+          }
+          .btn-content {
+            @include directions;
+            line-height: 1.5rem;
+
+            .btn-p {
+              font-size: 0.8rem;
+              @include margintop-bottom(0.2rem, 0);
+              color: gray;
+              padding: 0.2rem;
+            }
+
+            .btn-span {
+              font-size: 1.4rem;
+              padding: 0.2rem;
+              margin-bottom: 0.8rem;
+            }
+          }
         }
       }
     }

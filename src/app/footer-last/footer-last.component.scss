@@ -1,0 +1,29 @@
+@import "../../assets/scss/base/mixins";
+@import "../../assets/scss/base/colors";
+@import "../../assets/scss/base/fonts";
+@import "../../assets/scss/base/typography";
+
+.footer-main {
+  @include width-height(100%, 20vh);
+  @include d-flex(center, flex-start);
+  @include paddingtop-bottom(2rem, 2rem);
+
+  .container {
+    .footer-content {
+      @include flex-fd-column;
+      gap: 2rem;
+
+      .foot-text {
+        font-size: 1.5rem;
+      }
+    }
+
+    .footer-icons {
+      @include d-flex-h-center(center, center, center);
+      gap: 2.5rem;
+      i {
+        font-size: 3rem;
+      }
+    }
+  }
+}

@@ -1,13 +1,13 @@
 @import "../../assets/scss/base/colors";
 @import "../../assets/scss/base/fonts";
 @import "../../assets/scss/base/mixins";
+@import "../../assets/scss/base/typography";
 
 section {
   background-color: #00a6b51b;
   @include d-flex(center, center);
   opacity: 5;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  @include paddingtop-bottom(4rem, 4rem);
 
   .container {
     @include directions;
@@ -17,7 +17,7 @@ section {
       line-height: 2rem;
 
       h2 {
-        font-size: 2.5rem;
+        font-size: $font-size-25;
       }
       .head-small {
         font-size: 2.2rem;
@@ -30,8 +30,7 @@ section {
       gap: 2rem;
 
       .card-content {
-        width: 42rem;
-        height: 40rem;
+        @include width-height(42rem, 40rem);
         @include flex-fd-column;
         position: relative;
         border-radius: 2rem;
@@ -42,34 +41,25 @@ section {
       }
 
       .details-head {
-        position: absolute;
-        top: 19rem;
-        left: 6rem;
+        @include positionabsolute(19rem, 6rem);
 
-.rent{
-  position: absolute;
-  background-color: #00A5B5;
-  color: white;
-  bottom: 32rem;
-  font-weight: 400;
-  right: 35rem;
-  font-size: 1.3rem;
-  padding: 0.5rem;
-  width: 6rem;
-  height: 2rem;
-  text-align: center;
-  border-radius: 0 0 10px;
-
-
-}
+        .rent {
+          @include width-height(6rem, 2rem);
+          @include position-right-bottom(35rem, 32rem);
+          background-color: #00a5b5;
+          color: white;
+          font-weight: 400;
+          font-size: $font-size-13;
+          padding: 0.5rem;
+          text-align: center;
+          border-radius: 0 0 10px;
+        }
         .logo {
-          position: absolute;
+          @include position-top-right(-3.5rem, 27rem);
           color: rgba(67, 67, 194, 0.608);
           background-color: rgb(255, 255, 255);
           padding: 1.5rem;
           border-radius: 50px;
-          top: -3.5rem;
-          right: 27rem;
           box-shadow: 0px 3px 20px 0 rgb(0, 0, 0, 0.159);
 
           .logo-icon {
@@ -80,15 +70,13 @@ section {
           background-color: rgb(255, 255, 255);
           padding: 0rem 0rem 0rem 2rem;
           border-radius: 20px 0 0 20px;
-          width: 34rem;
-          height: 18rem;
+          @include width-height(34rem, 18rem);
           @include newdirection;
           box-shadow: 0px 3px 20px 0 rgb(0, 0, 0, 0.159);
 
           .content-1 {
-            font-size: 1.8rem;
-            margin-top: 4rem;
-            margin-bottom: 1.5rem;
+            @include margintop-bottom(4rem, 1.5rem);
+            font-size: $font-size-18;
             font-weight: 600;
           }
 

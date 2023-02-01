@@ -45,7 +45,7 @@
   flex-wrap: nowrap;
 }
 @mixin flex-hv-center {
-  @include flex-v-center;
+ display: flex;
   justify-content: center;
 }
 @mixin flex-d-wrap {
@@ -171,4 +171,49 @@
   text-align: center;
   align-items: center;
  
+}
+
+@mixin width-height($width, $height){
+  width: $width;
+  height: $height;
+}
+
+@mixin margin-padding($margin, $padding){
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin margintop-bottom($margin-top, $margin-bottom){
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+}
+  
+  @mixin position-absolute( $top, $bottom){
+    position: absolute;
+  top: $top;
+  bottom: $bottom;
+  
+}
+
+@mixin positionabsolute($top, $left){
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+@mixin position-right-bottom($right, $bottom){
+  position: absolute;
+  right: $right;
+  bottom: $bottom;
+}
+
+@mixin position-top-right($top, $right){
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+@mixin paddingtop-bottom($padding-top, $padding-bottom){
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
 }
