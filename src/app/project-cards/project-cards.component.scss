@@ -46,6 +46,22 @@ section {
         top: 19rem;
         left: 6rem;
 
+.rent{
+  position: absolute;
+  background-color: #00A5B5;
+  color: white;
+  bottom: 32rem;
+  font-weight: 400;
+  right: 35rem;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  width: 6rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 0 0 10px;
+
+
+}
         .logo {
           position: absolute;
           color: rgba(67, 67, 194, 0.608);
@@ -56,7 +72,7 @@ section {
           right: 27rem;
           box-shadow: 0px 3px 20px 0 rgb(0, 0, 0, 0.159);
 
-          span {
+          .logo-icon {
             font-size: 4rem;
           }
         }

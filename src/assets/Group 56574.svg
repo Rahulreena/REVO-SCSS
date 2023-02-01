@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1368.59" height="354.722" viewBox="0 0 1368.59 354.722">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.796" cy="0.611" r="0.762" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9edfff"/>
+      <stop offset="1" stop-color="#0af"/>
+    </radialGradient>
+    <filter id="_6" x="1084.025" y="42.251" width="257.172" height="277.51" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#05234a" flood-opacity="0.451"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="MOBILE_2" x="878.514" y="42.251" width="292.544" height="312.47" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur-2"/>
+      <feFlood flood-color="#05234a" flood-opacity="0.451"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_8270" data-name="Rectangle 8270" width="295.815" height="161.807" transform="translate(0)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="_6-2" x="1055.495" y="-164.65" width="281.845" height="304.336" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur-3"/>
+      <feFlood flood-color="#05234a" flood-opacity="0.451"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_56574" data-name="Group 56574" transform="translate(0)">
+    <path id="Path_38389" data-name="Path 38389" d="M0,0H1368.59V353.552H0Z" transform="translate(0 0)" fill="url(#radial-gradient)"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_6)">
+      <rect id="_6-3" data-name="6" width="114.356" height="232.364" rx="10" transform="matrix(0.79, 0.62, -0.62, 0.79, 1237.08, 52.25)" fill="#262626"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#MOBILE_2)">
+      <rect id="MOBILE_2-2" data-name="MOBILE 2" width="130.623" height="265.416" rx="22" transform="translate(1055.55 52.25) rotate(39)" fill="#262626"/>
+    </g>
+    <g id="Group_1" data-name="Group 1" transform="translate(980.686 3.728)" clip-path="url(#clip-path)">
+      <g transform="matrix(1, 0, 0, 1, -980.69, -3.73)" filter="url(#_6-2)">
+        <rect id="_6-4" data-name="6" width="126.457" height="256.952" rx="22" transform="matrix(0.79, 0.62, -0.62, 0.79, 1223.69, -154.65)" fill="#262626"/>
+      </g>
+    </g>
+  </g>
+</svg>
