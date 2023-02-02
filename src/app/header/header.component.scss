@@ -6,20 +6,21 @@
 .mainhead {
   @include d-flex(space-around, center);
   font-size: $font-size-16;
-  margin: 2.2rem;
+ padding: 2rem;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0px 0px 20px rgba(0,0,0, 0.349);
 
   .logocontent {
-    font-size: $font-size-20;
+    @include fontsize-fontweight($font-size-20, 600);
     letter-spacing: 0.1em;
-    font-weight: 600;
 
     .logo {
       color: #e05206;
     }
 
     .small-p {
-      font-size: $font-size-8;
-      font-weight: 600;
+      @include fontsize-fontweight($font-size-8, 600);
       letter-spacing: 0.04rem;
       margin: 0;
       margin-top: 0.5rem;
@@ -41,8 +42,7 @@
       font-weight: $font-weight-medium;
 
       .select {
-        font-size: $font-size-16;
-        font-weight: $font-weight-medium;
+        @include fontsize-fontweight($font-size-16, $font-weight-medium);
         color: $list;
         font-family: $family;
       }

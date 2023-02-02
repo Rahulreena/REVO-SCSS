@@ -30,10 +30,9 @@
       @include margin-padding(1rem, 1.5rem);
       color: rgb(73, 72, 72);
       width: 15rem;
-      font-size: $font-size-16;
+      @include fontsize-fontweight($font-size-16, $font-weight-bold);
       font-family: $family;
       border-radius: 5rem;
-      font-weight: $font-weight-bold;
     }
   }
 
@@ -126,8 +125,7 @@
         width: 17rem;
         background-color: $white;
         border-radius: 10rem;
-        font-size: $font-size-19;
-        font-weight: $font-weight-bold;
+        @include fontsize-fontweight($font-size-19, $font-weight-bold);
         font-family: $family;
       }
     }

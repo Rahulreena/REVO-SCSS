@@ -38,12 +38,16 @@
           padding-left: 1rem;
           gap: 1rem;
           line-height: 2rem;
-          width: 18rem;
+          width: 14rem;
           background-color: black;
           border-radius: 10px;
           color: white;
           @include d-flex(start, center);
           text-decoration: none;
+
+          .apple{
+            filter: brightness(13);
+          }
           
           .logo-icon {
             color: white;
